@@ -355,7 +355,7 @@ const people = [
 ];
 
 // eslint-disable-next-line no-console
-const tableBody = document.querySelector('tbody');
+const tableElement = document.querySelector('.dashboard');
 
 for (const person of people) {
   const age = person.died - person.born;
@@ -395,5 +395,5 @@ for (const person of people) {
     personRow.append(infoCell);
   }
 
-  tableBody.append(personRow);
+  tableElement.append(personRow);
 }
